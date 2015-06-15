@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "TagTrack",
+  "description": "This extension allows you too tag songs in YT and SoundCloud",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/",
+    "http://*/*", 
+    "https://*/*", 
+    "background"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },  
+   "web_accessible_resources": ["jquery-2.1.4.min.js", "handlebars.min.js", "listen.js", "templates.js"]  
+}

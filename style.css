@@ -1,0 +1,24 @@
+#tt-wrapper{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 200px;
+	height: 100vh;
+	z-index: 19999999999;
+	background: #333;
+	color: #eee;
+	right: -200px;
+	-webkit-transition: all .5s ease;
+	        transition: all .5s ease;
+}
+
+#tt-wrapper.in{
+	right: 0;
+}
+
+
+#tt-wrapper button{
+	background: #eee;
+	padding: 10px;
+	margin: 40px;
+}
