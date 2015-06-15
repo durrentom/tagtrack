@@ -19,5 +19,5 @@
     "scripts": ["background.js"],
     "persistent": false
   },  
-   "web_accessible_resources": ["jquery-2.1.4.min.js", "handlebars.min.js", "listen.js", "templates.js"]  
+   "web_accessible_resources": ["libs.js", "listen.js", "templates.js"]  
 }

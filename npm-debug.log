@@ -1,0 +1,102 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 warn package.json tagtrack@0.1.0 No repository field.
+5 warn package.json tagtrack@0.1.0 No README data
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ '/Users/thomas/development/chromeplugin/tagtrack',
+7 verbose install   [ 'grunt',
+7 verbose install     'grunt-exec',
+7 verbose install     'grunt-contrib-jshint',
+7 verbose install     'grunt-contrib-watch',
+7 verbose install     'grunt-contrib-handlebars',
+7 verbose install     'grunt-chrome-extension-reload',
+7 verbose install     'grunt-external-daemon' ] ]
+8 info preinstall tagtrack@0.1.0
+9 verbose readDependencies using package.json deps
+10 verbose already installed skipping grunt@^0.4.5 /Users/thomas/development/chromeplugin/tagtrack
+11 verbose already installed skipping grunt-exec@^0.4.6 /Users/thomas/development/chromeplugin/tagtrack
+12 verbose already installed skipping grunt-contrib-jshint@^0.11.2 /Users/thomas/development/chromeplugin/tagtrack
+13 verbose already installed skipping grunt-contrib-watch@^0.6.1 /Users/thomas/development/chromeplugin/tagtrack
+14 verbose already installed skipping grunt-contrib-handlebars@~0.10.2 /Users/thomas/development/chromeplugin/tagtrack
+15 verbose already installed skipping grunt-chrome-extension-reload@~0.2.6 /Users/thomas/development/chromeplugin/tagtrack
+16 verbose cache add [ 'grunt-external-daemon@~0.1.1', null ]
+17 verbose cache add name=undefined spec="grunt-external-daemon@~0.1.1" args=["grunt-external-daemon@~0.1.1",null]
+18 verbose parsed url { protocol: null,
+18 verbose parsed url   slashes: null,
+18 verbose parsed url   auth: null,
+18 verbose parsed url   host: null,
+18 verbose parsed url   port: null,
+18 verbose parsed url   hostname: null,
+18 verbose parsed url   hash: null,
+18 verbose parsed url   search: null,
+18 verbose parsed url   query: null,
+18 verbose parsed url   pathname: 'grunt-external-daemon@~0.1.1',
+18 verbose parsed url   path: 'grunt-external-daemon@~0.1.1',
+18 verbose parsed url   href: 'grunt-external-daemon@~0.1.1' }
+19 verbose cache add name="grunt-external-daemon" spec="~0.1.1" args=["grunt-external-daemon","~0.1.1"]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: '~0.1.1',
+20 verbose parsed url   path: '~0.1.1',
+20 verbose parsed url   href: '~0.1.1' }
+21 verbose addNamed [ 'grunt-external-daemon', '~0.1.1' ]
+22 verbose addNamed [ null, '>=0.1.1-0 <0.2.0-0' ]
+23 silly lockFile 0f1a1132-grunt-external-daemon-0-1-1 grunt-external-daemon@~0.1.1
+24 verbose lock grunt-external-daemon@~0.1.1 /Users/thomas/.npm/0f1a1132-grunt-external-daemon-0-1-1.lock
+25 silly addNameRange { name: 'grunt-external-daemon',
+25 silly addNameRange   range: '>=0.1.1-0 <0.2.0-0',
+25 silly addNameRange   hasData: false }
+26 verbose request where is /grunt-external-daemon
+27 verbose request registry https://registry.npmjs.org/
+28 verbose request id 3a314edbefefbdf5
+29 verbose url raw /grunt-external-daemon
+30 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-external-daemon' ]
+31 verbose url resolved https://registry.npmjs.org/grunt-external-daemon
+32 verbose request where is https://registry.npmjs.org/grunt-external-daemon
+33 info trying registry request attempt 1 at 17:17:54
+34 verbose etag "84GKKW8Q5X8Y9VOSTG11N6VEA"
+35 http GET https://registry.npmjs.org/grunt-external-daemon
+36 http 304 https://registry.npmjs.org/grunt-external-daemon
+37 silly registry.get cb [ 304,
+37 silly registry.get   { date: 'Mon, 15 Jun 2015 14:17:59 GMT',
+37 silly registry.get     via: '1.1 varnish',
+37 silly registry.get     'cache-control': 'max-age=60',
+37 silly registry.get     etag: '"84GKKW8Q5X8Y9VOSTG11N6VEA"',
+37 silly registry.get     age: '0',
+37 silly registry.get     connection: 'keep-alive',
+37 silly registry.get     'x-served-by': 'cache-sin6921-SIN',
+37 silly registry.get     'x-cache': 'MISS',
+37 silly registry.get     'x-cache-hits': '0',
+37 silly registry.get     'x-timer': 'S1434377879.328346,VS0,VE849',
+37 silly registry.get     vary: 'Accept' } ]
+38 verbose etag https://registry.npmjs.org/grunt-external-daemon from cache
+39 silly addNameRange number 2 { name: 'grunt-external-daemon',
+39 silly addNameRange   range: '>=0.1.1-0 <0.2.0-0',
+39 silly addNameRange   hasData: true }
+40 silly addNameRange versions [ 'grunt-external-daemon',
+40 silly addNameRange   [ '1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.1.0' ] ]
+41 silly lockFile 0f1a1132-grunt-external-daemon-0-1-1 grunt-external-daemon@~0.1.1
+42 silly lockFile 0f1a1132-grunt-external-daemon-0-1-1 grunt-external-daemon@~0.1.1
+43 error notarget No compatible version found: grunt-external-daemon@'>=0.1.1-0 <0.2.0-0'
+43 error notarget Valid install targets:
+43 error notarget ["1.0.0","1.0.1","1.0.2","1.0.3","1.1.0"]
+43 error notarget
+43 error notarget This is most likely not a problem with npm itself.
+43 error notarget In most cases you or one of your dependencies are requesting
+43 error notarget a package version that doesn't exist.
+44 error System Darwin 14.3.0
+45 error command "node" "/usr/local/bin/npm" "install"
+46 error cwd /Users/thomas/development/chromeplugin/tagtrack
+47 error node -v v0.10.33
+48 error npm -v 1.4.28
+49 error code ETARGET
+50 verbose exit [ 1, true ]

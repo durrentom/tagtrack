@@ -10,6 +10,7 @@
 	right: -200px;
 	-webkit-transition: all .5s ease;
 	        transition: all .5s ease;
+	        padding: 40px;
 }
 
 #tt-wrapper.in{

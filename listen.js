@@ -33,26 +33,39 @@ function formatTime(time){
 
 function init(){
 	initiated = true;
-	var list = $('<ul></ul>').attr('id','tt-list');
-	var wrapper = $('<div>').attr('id','tt-wrapper').addClass('in');
-	$("<button></button>").attr("id","tagtrackbtn").html("New tag at <span id='tagtime'>0:00</span>").on('click', function(event) {
-		event.preventDefault();
-		/* Act on the event */
-		$("<li></li>").html(getYTPlayerTime()).appendTo(list);
-	})
-	.appendTo(wrapper);
-	list.appendTo(wrapper);
-	$('body').prepend(wrapper);
-	appendForm();
+
+	var baseTpl = TT['tpl/base.hbs'];
+	var html = baseTpl();
+	$('body').prepend(html);
+
+	$('#tagtrackbtn').on('click', tagHandler);
+
 
 	window.setInterval(function(){
 		$('#tagtime').html(formatTime(getYTPlayerTime()));
 	}, 500);
 }
 
-function appendForm(){
+function tagHandler(event){
+  currentVideo.pauseVideo();
+	event.preventDefault();
+	// list = $('#tt-list');
+	// $("<li></li>").html(getYTPlayerTime()).appendTo(list);
+
+	appendForm({ 'video_time': getYTPlayerTime(), 'video_id': getYTPlayerUrl(), 'video_time_readable': formatTime(getYTPlayerTime()) });
+  bindForm();
+}
+
+function bindForm(){
+    $('#tt-form').on('submit', function(event) {
+      event.preventDefault();
+    });
+}
+
+function appendForm(data){
+	console.log(window);
 	var postTemplate = TT['tpl/form.hbs'];
-	var html = postTemplate();
+	var html = postTemplate(data);
 	$('#tt-wrapper').append(html);
 }
 

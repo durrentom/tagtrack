@@ -1,13 +1,12 @@
 <form action="#" id="tt-form">
+	<h5>New tag at {{ video_time_readable }} </h5>
 	<div>
-		<label for="title">Title</label>
-		<input type="text" name="title">
+		<input type="text" name="title" placeholder="Title of the track">
 	</div>
 	<div>
-		<label for="url">URL</label>
-		<input type="text" name="url">
+		<input type="text" name="url" placeholder="Link to the track">
 	</div>
-	<input type="hidden" name="video_time" id="video_time">
-	<input type="hidden" name="video_id" id="video_id">
-	<button type="submit"></button>
+	<input type="hidden" name="video_time" id="video_time" value="{{ video_time }}">
+	<input type="hidden" name="video_id" id="video_id" value="{{ video_id }}">
+	<button type="submit">Submit new tag</button>
 </form>
